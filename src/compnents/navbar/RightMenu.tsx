@@ -1,15 +1,16 @@
 import React, { Component } from 'react';
 import { Menu } from 'antd';
+import {Link} from "react-router-dom";
 
 class RightMenu extends Component<any, any> {
 	render() {
 		return (
 			<Menu mode={this.props.mode}>
 				<Menu.Item key="mail">
-					<a href="#">Signin</a>
+					<Link to={`/login`}>Signin</Link>
 				</Menu.Item>
 				<Menu.Item key="app">
-					<a href="#">Signup</a>
+					<Link to={`/signup`}>Signin</Link>
 				</Menu.Item>
 			</Menu>
 		);

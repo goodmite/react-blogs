@@ -3,12 +3,22 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@types/react-redux": "^7.0.9",
     "@types/react-router-dom": "^4.3.3",
+    "@types/redux": "^3.6.0",
+    "@types/redux-thunk": "^2.1.0",
+    "@types/superagent": "^4.1.1",
     "antd": "^3.17.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "react-redux": "^7.0.3",
     "react-router-dom": "^5.0.0",
-    "react-scripts-ts-antd": "2.17.0"
+    "react-scripts-ts-antd": "2.17.0",
+    "redux": "^4.0.1",
+    "redux-persist": "^5.10.0",
+    "redux-thunk": "^2.3.0",
+    "superagent": "^5.0.5",
+    "superagent-promise": "^1.1.0"
   },
   "scripts": {
     "start": "react-scripts-ts-antd start",
@@ -21,6 +31,7 @@
     "@types/node": "^12.0.0",
     "@types/react": "^16.8.17",
     "@types/react-dom": "^16.8.4",
+    "redux-devtools-extension": "^2.13.8",
     "typescript": "^3.4.5"
   }
 }

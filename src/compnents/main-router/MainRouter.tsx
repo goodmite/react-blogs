@@ -2,7 +2,7 @@ import * as React from "react";
 import {Route, Redirect} from "react-router-dom";
 import Navbar from "../navbar";
 import {EPath} from "../../enums/path";
-
+import {connect} from "react-redux";
 interface IMainContainerProps {
   component: any;
   isAuthed?: boolean;
@@ -15,7 +15,7 @@ interface IMainContainerProps {
  * MainRouter:
  * Main router component is basically router guard + app wrapper
  * */
-const MainRouter: React.FunctionComponent<IMainContainerProps> = (props) => {
+const MainRouterComponent: React.FunctionComponent<IMainContainerProps> = (props) => {
   let allowRouteAccess = true;// !props.checkAuthentication || props.checkAuthentication && props.isAuthed;
   if(props.path === EPath.login){
     allowRouteAccess = !props.isAuthed;
@@ -27,12 +27,19 @@ const MainRouter: React.FunctionComponent<IMainContainerProps> = (props) => {
   return (
     <Route render={(matchProps) => {
       debugger;
-      return !allowRouteAccess ? <Redirect to="/"/> : (<div className="wrapper">
+      return !allowRouteAccess ? <Redirect to="/dashboard"/> : (<div className="wrapper">
         <Navbar/>
-        <Component/>
+        <Component history={matchProps.history}/>
       </div>);
     }}/>
   )
 };
 
-export default MainRouter;
+
+let mapStateToProps = (state: any) => {
+  console.dir(JSON.stringify(state));
+  console.log(state.isFetching);
+  return ({ isAuthed: state.users.isAuthed });
+};
+export const MainRouter =  connect(mapStateToProps)(MainRouterComponent);
+

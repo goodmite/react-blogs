@@ -1,5 +1,10 @@
 {
   "compilerOptions": {
+    "paths": {
+      "*": [
+        "types/*"
+      ]
+    },
     "baseUrl": ".",
     "outDir": "build/dist",
     "module": "esnext",
@@ -18,7 +23,9 @@
     "suppressImplicitAnyIndexErrors": true,
     "noUnusedLocals": true,
     "allowSyntheticDefaultImports": true,
-    "experimentalDecorators": true
+    "experimentalDecorators": true,
+    "allowUnusedLabels": false,
+    "noUnusedParameters": false
   },
   "exclude": [
     "node_modules",

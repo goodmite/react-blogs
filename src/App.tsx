@@ -3,9 +3,10 @@ import './App.scss';
 import Navbar from "./compnents/navbar";
 import {BrowserRouter as Router} from "react-router-dom";
 import {Redirect, Route, Switch} from "react-router";
-import MainRouter from "./compnents/main-router/MainRouter";
 import {NotFound} from "./compnents/not-found/not-found";
 import {WrappedLoginComponent} from "./compnents/auth/Login";
+import {DashboardComponent} from "./compnents/dashboard/dashboard";
+import {MainRouter} from "./compnents/main-router/MainRouter";
 
 class App extends React.Component {
   public render() {
@@ -19,10 +20,11 @@ class App extends React.Component {
             <Redirect to="/home" />
           </Route>
           <MainRouter path={'/login'} checkAuthentication={true} component={WrappedLoginComponent} />
+          <MainRouter path={'/dashboard'} checkAuthentication={false} component={DashboardComponent} />
           <MainRouter path={'/nav'} checkAuthentication={true} component={Navbar} />
 
           {/*child with no path prop will always match, and hence it should be the last child*/}
-          <MainRouter component={NotFound} isAuthed={false}  checkAuthentication={false}/>
+          <MainRouter component={NotFound}  checkAuthentication={false}/>
         </Switch>
       </Router>
     );
