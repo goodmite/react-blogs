@@ -17,7 +17,7 @@ class App extends React.Component {
           Good video: https://www.youtube.com/watch?time_continue=2&v=ojYbcon588A
           */}
           <Route exact path="/">
-            <Redirect to="/home" />
+            <Redirect to="/dashboard" />
           </Route>
           <MainRouter path={'/login'} checkAuthentication={true} component={WrappedLoginComponent} />
           <MainRouter path={'/dashboard'} checkAuthentication={false} component={DashboardComponent} />

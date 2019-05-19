@@ -2,30 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="345635cf-6ed8-4504-9625-a2539368b6d6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/compnents/auth/login-service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/compnents/dashboard/dashboard.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/interfaces/auth.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/localstorage.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/numberOfChange.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/reducers/auth.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/numberOfChange.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/reduxPersist.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/agent.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/reduxPersist.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/url.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/interfaces/lifecycle-hooks.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/compnents/auth/Login.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/compnents/auth/Login.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/compnents/auth/Login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/compnents/auth/Login.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/compnents/main-router/MainRouter.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/compnents/main-router/MainRouter.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/compnents/navbar/RightMenu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/compnents/navbar/RightMenu.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tslint.json" beforeDir="false" afterPath="$PROJECT_DIR$/tslint.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/compnents/dashboard/dashboard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/compnents/dashboard/dashboard.tsx" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -47,6 +27,15 @@
                 <element signature="e#0#31#0" expanded="true" />
                 <element signature="e#239#275#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/compnents/dashboard/dashboard.tsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" selection-start-line="6" selection-end-line="6" />
             </state>
           </provider>
         </entry>
@@ -74,15 +63,27 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/interfaces/lifecycle-hooks.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/index.html">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/compnents/main-router/MainRouter.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="355">
-              <caret line="30" column="17" lean-forward="true" selection-start-line="30" selection-start-column="17" selection-end-line="30" selection-end-column="17" />
+            <state relative-caret-position="294">
+              <caret line="41" column="46" lean-forward="true" selection-start-line="41" selection-start-column="46" selection-end-line="41" selection-end-column="46" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
               </folding>
@@ -102,11 +103,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/App.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="21" column="17" lean-forward="true" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
+            <state>
+              <caret lean-forward="true" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
               </folding>
@@ -119,24 +120,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="153">
               <caret line="11" selection-start-line="11" selection-end-line="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node_modules/redux-devtools-extension/index.d.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="218">
-              <caret line="167" column="107" lean-forward="true" selection-start-line="167" selection-start-column="107" selection-end-line="167" selection-end-column="107" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node_modules/redux/index.d.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="221" column="33" selection-start-line="221" selection-start-column="33" selection-end-line="221" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -167,6 +150,8 @@
       <find>isFetching</find>
       <find>AUTH_USER</find>
       <find>FETCHING_USER_SUCCESS</find>
+      <find>Global Feed</find>
+      <find>agent</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -189,7 +174,6 @@
         <option value="$PROJECT_DIR$/src/compnents/navbar/Navbar.scss" />
         <option value="$PROJECT_DIR$/src/compnents/not-found/not-found.tsx" />
         <option value="$PROJECT_DIR$/src/enums/path.ts" />
-        <option value="$PROJECT_DIR$/src/compnents/dashboard/dashboard.tsx" />
         <option value="$PROJECT_DIR$/src/compnents/auth/login-server.ts" />
         <option value="$PROJECT_DIR$/tsconfig.json" />
         <option value="$PROJECT_DIR$/tslint.json" />
@@ -208,15 +192,18 @@
         <option value="$PROJECT_DIR$/src/index.tsx" />
         <option value="$PROJECT_DIR$/src/reducers/auth.ts" />
         <option value="$PROJECT_DIR$/src/compnents/auth/Login.tsx" />
-        <option value="$PROJECT_DIR$/src/App.tsx" />
         <option value="$PROJECT_DIR$/src/compnents/main-router/MainRouter.tsx" />
+        <option value="$PROJECT_DIR$/src/App.tsx" />
+        <option value="$PROJECT_DIR$/src/interfaces/lifecycle-hooks.ts" />
+        <option value="$PROJECT_DIR$/src/compnents/dashboard/dashboard.tsx" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="67" />
-    <option name="width" value="1863" />
-    <option name="height" value="1044" />
+    <option name="x" value="24" />
+    <option name="y" value="9" />
+    <option name="width" value="1580" />
+    <option name="height" value="1035" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -250,7 +237,7 @@
               <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
               <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="compnents" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="auth" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="dashboard" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
           </expand>
           <select />
@@ -342,6 +329,13 @@
               <item name="react-blogs" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="compnents" type="462c0819:PsiDirectoryNode" />
+              <item name="dashboard" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="react-blogs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="react-blogs" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="compnents" type="462c0819:PsiDirectoryNode" />
               <item name="main-router" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -412,13 +406,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47380000" />
+    <option name="totallyTimeSpent" value="51493000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="704" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4987715" visible="true" weight="0.16613673" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4987715" visible="true" weight="0.16613673" />
       <window_info id="Structure" order="1" sideWeight="0.5012285" side_tool="true" weight="0.24960254" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -433,7 +427,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="TypeScript" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.12937063" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.18881118" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -489,13 +483,6 @@
     <entry file="file://$PROJECT_DIR$/node_modules/react-scripts-ts-antd/bin/react-scripts-ts-antd.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-378" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/compnents/dashboard/dashboard.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="31" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/images.d.ts">
@@ -734,13 +721,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/interfaces/auth.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/reducers/auth.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="368">
@@ -755,6 +735,16 @@
     <entry file="file://$PROJECT_DIR$/public/index.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/compnents/main-router/MainRouter.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="41" column="46" lean-forward="true" selection-start-line="41" selection-start-column="46" selection-end-line="41" selection-end-column="46" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/compnents/auth/Login.tsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="301">
@@ -766,20 +756,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.tsx">
+    <entry file="file://$PROJECT_DIR$/src/interfaces/auth.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="21" column="17" lean-forward="true" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
+        <state relative-caret-position="374">
+          <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/compnents/dashboard/dashboard.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/interfaces/lifecycle-hooks.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
           <folding>
-            <element signature="e#0#31#0" expanded="true" />
+            <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/compnents/main-router/MainRouter.tsx">
+    <entry file="file://$PROJECT_DIR$/src/App.tsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
-          <caret line="30" column="17" lean-forward="true" selection-start-line="30" selection-start-column="17" selection-end-line="30" selection-end-column="17" />
+        <state>
+          <caret lean-forward="true" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
           </folding>

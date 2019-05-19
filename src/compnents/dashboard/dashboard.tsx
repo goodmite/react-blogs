@@ -1,6 +1,12 @@
 import * as React from 'react';
 
-export class DashboardComponent extends React.Component{
+
+
+export class DashboardComponent extends React.Component implements ComponentWillMount{
+  componentWillMount(){
+
+  }
+
   render(): React.ReactNode {
     return (
       <div>
