@@ -2,22 +2,22 @@
 * http://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/
 * */
 
-interface ComponentWillMount {
+export interface ComponentWillMount {
   componentWillMount: () => any
 }
 
-interface ComponentDidMount {
+export interface ComponentDidMount {
   ComponentDidMount : () => any
 }
 
-interface ComponentDidUpdate{
+export interface ComponentDidUpdate{
   componentDidUpdate: () => any
 }
 
-interface ShouldComponentUpdate{
+export interface ShouldComponentUpdate{
   shouldComponentUpdate: () => any
 }
 
-interface ComponentWillUnmount{
+export interface ComponentWillUnmount{
   componentWillUnmount: () => any
 }

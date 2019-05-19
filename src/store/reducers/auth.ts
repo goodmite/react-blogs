@@ -1,8 +1,8 @@
 // Copyright (c) Microsoft. All rights reserved.
 // Licensed under the MIT license. See LICENSE file in the project root for full license information.
 
-import {LoginService} from "../compnents/auth/login-service";
-import {IAuthHTTPBody, IAuthHTTPResponse, IUser} from "../interfaces/auth";
+import {LoginService} from "../../compnents/auth/login-service";
+import {IAuthHTTPBody, IAuthHTTPResponse, IUser} from "../../interfaces/auth";
 
 const AUTH_USER = 'AUTH_USER'
 const UNAUTH_USER = 'UNAUTH_USER'

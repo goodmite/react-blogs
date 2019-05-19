@@ -16,6 +16,7 @@
     "react-scripts-ts-antd": "2.17.0",
     "redux": "^4.0.1",
     "redux-persist": "^5.10.0",
+    "redux-saga": "^1.0.2",
     "redux-thunk": "^2.3.0",
     "superagent": "^5.0.5",
     "superagent-promise": "^1.1.0"

@@ -7,16 +7,20 @@ import {FormEvent} from "react";
 import {Redirect} from "react-router";
 // import {LoginService} from "./login-service";
 import {connect} from "react-redux";
-import {bindActionCreators} from "redux";
-import * as userActionCreators from '../../reducers/auth';
+// import {bindActionCreators} from "redux";
+// import * as userActionCreators from '../../reducers/auth';
+// import {numberRequestStartAction} from "../../store/actions";
+import {LoginTryEvent} from "../../store/login/actions";
+import {IAuthHTTPBody} from "../../interfaces/auth";
 
 interface ILoginProps {
   history: any;
   isAuthed: boolean;
   isFetching: boolean;
   error: string;
-  fetchAndHandleAuthentication:any;
-  form:any
+  fetchAndHandleAuthentication: any;
+  onRequestNewNumber: (authHTTPBody: IAuthHTTPBody, history: History) => void;
+  form: any
 }
 
 
@@ -26,9 +30,10 @@ class Login extends React.Component<ILoginProps, any> {
     loading: false,
   };
 
-  componentWillReceiveProps(){
+  componentWillReceiveProps() {
     console.log("this.props", this.props);
   }
+
   JSON = JSON;
 
   handleSubmit = (e: FormEvent<any>) => {
@@ -37,7 +42,7 @@ class Login extends React.Component<ILoginProps, any> {
     this.props.form.validateFields((err: any, values: any) => {
       if (!err) {
         console.log(this.props.history);
-        this.props.fetchAndHandleAuthentication(this.props.history, {"user": values});
+        this.props.onRequestNewNumber({"user": values}, this.props.history);
       }
     });
   };
@@ -75,14 +80,15 @@ class Login extends React.Component<ILoginProps, any> {
               <Checkbox>Remember me</Checkbox>
             )}
             <a className="login-form-forgot" href="">Forgot password</a>
-            <Button type="primary" onClick={this.handleSubmit} loading={this.props.isFetching} htmlType="submit" className="login-form-button">
+            <Button type="primary" onClick={this.handleSubmit} loading={this.props.isFetching} htmlType="submit"
+                    className="login-form-button">
               Log in
             </Button>
             Or <a href="">register now!</a>
             {
-              this.props.error?(<div className="error-message">
-              <span>{this.props.error}</span>
-              </div>):""
+              this.props.error ? (<div className="error-message">
+                <span>{this.props.error}</span>
+              </div>) : ""
             }
           </Form.Item>
         </Form>
@@ -95,12 +101,18 @@ class Login extends React.Component<ILoginProps, any> {
 
 // const WrappedLoginComponent = Form.create({name: 'normal_login'})(Login);
 
+const mapDispatchToProps = (dispatch: any) => ({
+  onRequestNewNumber: (authHTTPBody: IAuthHTTPBody, history: History) => {
+    dispatch(new LoginTryEvent({authHTTPBody, history}));
+  }
+});
+
 export const WrappedLoginComponent = connect(
   (state: any) => {
     console.dir(JSON.stringify(state));
     console.log(state.isFetching);
-    return ({ isFetching: state.users.isFetching, error: state.users.error, isAuthed: state.users.isAuthed });
+    return ({isFetching: state.users.isFetching, error: state.users.error, isAuthed: state.users.isAuthed});
   },
-  (dispatch) => bindActionCreators(userActionCreators, dispatch)
+  mapDispatchToProps
 )(Form.create({name: 'normal_login'})(Login));
 

@@ -26,7 +26,6 @@ const MainRouterComponent: React.FunctionComponent<IMainContainerProps> = (props
   console.log(rest);
   return (
     <Route render={(matchProps) => {
-      debugger;
       return !allowRouteAccess ? <Redirect to="/dashboard"/> : (<div className="wrapper">
         <Navbar/>
         <Component history={matchProps.history}/>
